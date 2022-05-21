@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/lib/bootstrap/css/bootstrap.min.css",
+              "src/assets/css/normalize.css",
+              "src/assets/css/theme.css",
+              "src/assets/css/theme/themelibrary.css",
+              "src/assets/lib/slick/slick/slick.css",
+              "src/assets/lib/slick/slick/slick-theme.css",
+              "src/assets/lib/Magnific-Popup-master/dist/magnific-popup.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/lib/fontawesome-free-5.10.2-web/js/brands.js",
+              "src/assets/lib/fontawesome-free-5.10.2-web/js/solid.js",
+              "src/assets/lib/fontawesome-free-5.10.2-web/js/fontawesome.js",
+              "src/assets/lib/jquery/jquery-3.4.1.min.js",
+              "src/assets/lib/bootstrap/js/bootstrap.min.js",
+              "src/assets/lib/Magnific-Popup-master/dist/jquery.magnific-popup.js",
+              "src/assets/lib/slick/slick/slick.min.js",
+              "src/assets/js/theme.js"
+            ]
           },
           "configurations": {
             "production": {
