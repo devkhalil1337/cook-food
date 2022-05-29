@@ -1,0 +1,76 @@
+<div class="section-home s-category">
+    <div class="heading-section">
+      <div class="sa-title popcat">{{title}}</div>
+      <div class="clear"></div>
+    </div>
+    <div class="home-category-list">
+      <div class="home-box-category" *ngFor = "let category of categoriesList" (click)="onOpen(category);">
+        <div class="home-text-category">
+          <div class="bc-text">{{category?.name}}</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food1.jpg" alt="image-category">
+        </div>
+      </div>
+      <!-- <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Dinner Ideas</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food2.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Healthy</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food3.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Vegetarian</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food4.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Cakes and Baking</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food5.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">World Cuisine</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food6.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Meal Type</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food7.jpg" alt="image-category">
+        </div>
+      </div>
+      <div class="home-box-category">
+        <div class="home-text-category">
+          <div class="bc-text">Chicken Recipes</div>
+        </div>
+        <div class="home-image-category">
+          <img src="assets/img/food8.jpg" alt="image-category">
+        </div>
+      </div> -->
+      <div class="clear"></div>
+      <!-- <div class=" more-category">
+        <div class="theme-button mcbutton">See More</div>
+      </div> -->
+    </div>
+  </div>
