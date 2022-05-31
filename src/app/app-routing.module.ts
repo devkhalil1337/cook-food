@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CountryComponent } from './module/country/country.component';
 import { HomeComponent } from './module/home/home.component';
 import { RecipeListComponent } from './module/recipe-list/recipe-list.component';
+import { RecipePageComponent } from './module/recipe-page/recipe-page.component';
 
 const routes: Routes = [];
 
@@ -19,6 +20,10 @@ const routes: Routes = [];
     {
       path:':country/:category',
       component:RecipeListComponent
+    },
+    {
+      path:':country/:category/:Id',
+      component:RecipePageComponent
     }
   ])],
   exports: [RouterModule]

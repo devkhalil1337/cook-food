@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent implements OnInit {
+  @Input() recipeId:number
 
-  constructor() { }
+  
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+
+  onRecipeDetails(){
+    // this.router.navigateByUrl(this.router.url+"/32");
   }
 
 }

@@ -1,207 +1,44 @@
-<div class="list-section">
-    <div class="wrap-list-rc">
-      <div class="heading-page">
-        All food recipes
-        <div class="back-btn">
-          <div class="icon-back" backButton><i class="fas fa-chevron-left"></i></div>
-          
+<div class="content-wrap">
+
+  <div class="list-section">
+      <div class="wrap-list-rc">
+        <div class="heading-page">
+          All food recipes
+          <div class="back-btn">
+            <div class="icon-back" backButton><i class="fas fa-chevron-left"></i></div>
+            
+          </div>
         </div>
+        
+        <div class="lrc-item">
+            <div class="lrc-content" (click)="onRecipeDetails()">
+              <div class="lrc-img">
+                <img src="img/food5.jpg" alt="item">
+              </div>
+              <div class="lrc-desc">
+                <div class="lrc-title">Woku Fish Belanga</div>
+                <div class="lrc-text">
+                  White salmon / 2 tuna, salt, lime, vegetable oil, curly red chili
+                </div>
+                <div class="lrc-button">
+                  <div class="lrcb-left">
+                    <span class="lhc like"><i class="fas fa-heart"></i> 5</span>
+                    <span class="lhc hours"><i class="fas fa-clock"></i> 27m</span>
+                    <span class="lhc comment"><i class="fas fa-comment-alt"></i> 0</span>
+                  </div>
+                  <div class="lrcb-right">
+                    
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+        </div>      
       </div>
-      
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food5.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Woku Fish Belanga</div>
-              <div class="lrc-text">
-                White salmon / 2 tuna, salt, lime, vegetable oil, curly red chili
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 5</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 27m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 0</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/news2.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Vegetable Corn Soup</div>
-              <div class="lrc-text">
-                chicken wings, sweet corn, carrots, cabbage, leeks, celery
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 9</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 40m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 5</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food12.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Miso soup</div>
-              <div class="lrc-text">
-                Bamboo shoot, Cabbage, Carrot, Corn, Eggplant, Green pepper, Mushroom, Onion
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 7</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 34m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 3</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food8.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Simple Fried Rice</div>
-              <div class="lrc-text">
-                Rice, meatballs, eggs, salt, flavoring, sweet soy sauce, garlic, red chili
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 4</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 15m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 1</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food14.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Crispy chicken</div>
-              <div class="lrc-text">
-                Medium Cut Chicken, Tapioca Flour, Wheat Flour, Egg, Little Water, Flavoring Flavor
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 2</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 35m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 5</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food6.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Grilled fish</div>
-              <div class="lrc-text">
-                Medium fish, Salt, Soysauce
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 4</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 15m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 1</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="lrc-item">
-        <a href="#">
-          <div class="lrc-content">
-            <div class="lrc-img">
-              <img src="img/food2.jpg" alt="item">
-            </div>
-            <div class="lrc-desc">
-              <div class="lrc-title">Happy eggplant</div>
-              <div class="lrc-text">
-                Sugar, Soysauce, Miso paste
-              </div>
-              <div class="lrc-button">
-                <div class="lrcb-left">
-                  <span class="lhc like"><i class="fas fa-heart"></i> 4</span>
-                  <span class="lhc hours"><i class="fas fa-clock"></i> 15m</span>
-                  <span class="lhc comment"><i class="fas fa-comment-alt"></i> 1</span>
-                </div>
-                <div class="lrcb-right">
-                  
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      
     </div>
-    <div class="wrap-pagination">
+    <!-- <div class="wrap-pagination">
       <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li><li class="page-item"><a class="page-link" href="#">1</a></li><li class="page-item active"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">3</a></li><li class="page-item"><a class="page-link" href="#">4</a></li><li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <li class="page-item"><a class="page-link" href (click)="onRecipeDetails()">Previous</a></li><li class="page-item"><a class="page-link" href (click)="onRecipeDetails()">1</a></li><li class="page-item active"><a class="page-link" href (click)="onRecipeDetails()">2</a></li><li class="page-item"><a class="page-link" href (click)="onRecipeDetails()">3</a></li><li class="page-item"><a class="page-link" href (click)="onRecipeDetails()">4</a></li><li class="page-item"><a class="page-link" href (click)="onRecipeDetails()">Next</a></li>
       </ul>
-    </div>
-  </div>
+    </div> -->
+</div>

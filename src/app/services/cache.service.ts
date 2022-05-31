@@ -25,4 +25,12 @@ export class CacheService {
    return localStorage.getItem("category");
   }
 
+  setSelectedRecipe(recipe:string){
+    localStorage.setItem("recipe",recipe);
+  }
+  
+  getSelectedRecipe(){
+   return localStorage.getItem("recipe");
+  }
+
 }

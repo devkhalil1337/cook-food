@@ -10,7 +10,9 @@ import { CategoryModel } from './category.model';
 })
 export class CategoryComponent implements OnInit {
   @Input() title: string;
-   @Input() categoriesList : Array<CategoryModel>;
+  @Input() categoriesList : Array<CategoryModel>;
+  @Input() isCountry = false;
+  @Input() isCategory = false;
 
   constructor(private router: Router,
     private cacheService:CacheService) { }
@@ -19,17 +21,16 @@ export class CategoryComponent implements OnInit {
   }
 
   onOpen(category:any){
-    if(category.isCountry){
+    if(this.isCountry){
       let countryName = category.name.toLowerCase();
       this.cacheService.setSelectedCountry(countryName);
       this.router.navigateByUrl(countryName)
     }
-    else {
+    else if(this.isCategory){
       let country = this.cacheService.getSelectedCountry()
       let categoryName = category.name.toLowerCase();
       this.router.navigateByUrl(`${country}/${categoryName}`)
     }
-    console.log(category)
   }
 
 }

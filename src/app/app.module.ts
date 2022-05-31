@@ -8,6 +8,7 @@ import { CategoryComponent } from './module/category/category.component';
 import { CountryComponent } from './module/country/country.component';
 import { RecipeListComponent } from './module/recipe-list/recipe-list.component';
 import { BackButtonDirective } from './directive/back-button.directive';
+import { RecipePageComponent } from './module/recipe-page/recipe-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { BackButtonDirective } from './directive/back-button.directive';
     CategoryComponent,
     CountryComponent,
     RecipeListComponent,
-    BackButtonDirective
+    BackButtonDirective,
+    RecipePageComponent
   ],
   imports: [
     BrowserModule,
