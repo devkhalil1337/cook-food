@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CacheService } from 'src/app/services/cache.service';
+import { CommonServiceService } from 'src/app/services/common-service.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,17 +9,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent implements OnInit {
-  @Input() recipeId:number
-
   
-  constructor(private router: Router) { }
+  reciepsList;
+  
+  constructor(private router: Router,  private cacheService:CacheService,private commonService:CommonServiceService) { 
+    this.reciepsList = this.commonService.getRecipiesByCategory;
+  }
 
   ngOnInit(): void {
   }
 
 
-  onRecipeDetails(){
-    // this.router.navigateByUrl(this.router.url+"/32");
+  onRecipeDetails(id:any){
+     this.router.navigateByUrl(this.cacheService.getCurrentURL()+ "/"+id);
   }
 
 }

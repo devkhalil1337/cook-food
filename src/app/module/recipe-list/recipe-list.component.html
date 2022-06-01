@@ -10,21 +10,21 @@
           </div>
         </div>
         
-        <div class="lrc-item">
-            <div class="lrc-content" (click)="onRecipeDetails()">
+        <div class="lrc-item" *ngFor="let recipe of reciepsList"  (click)="onRecipeDetails(recipe?.id)">
+            <div class="lrc-content">
               <div class="lrc-img">
-                <img src="img/food5.jpg" alt="item">
+                <img src="assets/img/{{recipe.image}}" alt="item">
               </div>
               <div class="lrc-desc">
-                <div class="lrc-title">Woku Fish Belanga</div>
-                <div class="lrc-text">
+                <div class="lrc-title">{{recipe?.name}}</div>
+                <!-- <div class="lrc-text">
                   White salmon / 2 tuna, salt, lime, vegetable oil, curly red chili
-                </div>
+                </div> -->
                 <div class="lrc-button">
                   <div class="lrcb-left">
-                    <span class="lhc like"><i class="fas fa-heart"></i> 5</span>
+                    <span class="lhc like"><i class="fas fa-heart"></i> 1</span>
                     <span class="lhc hours"><i class="fas fa-clock"></i> 27m</span>
-                    <span class="lhc comment"><i class="fas fa-comment-alt"></i> 0</span>
+                    <!-- <span class="lhc comment"><i class="fas fa-comment-alt"></i> 0</span> -->
                   </div>
                   <div class="lrcb-right">
                     

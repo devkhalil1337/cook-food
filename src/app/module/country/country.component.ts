@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { recipeCategories } from 'src/app/recipe-data/recipe-data';
 import { CategoryModel } from '../category/category.model';
 import { countryCategories } from './country.modal';
 
@@ -14,7 +15,7 @@ export class CountryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.countryCategories  = countryCategories
+    this.countryCategories  = recipeCategories
   }
 
 }

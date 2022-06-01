@@ -1,6 +1,6 @@
 export interface CategoryModel{
     id:number
     name:string;
-    img?:string;
+    image?:string;
     isCountry?:boolean
 }

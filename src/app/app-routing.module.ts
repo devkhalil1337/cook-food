@@ -22,7 +22,7 @@ const routes: Routes = [];
       component:RecipeListComponent
     },
     {
-      path:':country/:category/:Id',
+      path:':country/:category/:id',
       component:RecipePageComponent
     }
   ])],

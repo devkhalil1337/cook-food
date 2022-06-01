@@ -9,7 +9,7 @@
           <div class="bc-text">{{category?.name}}</div>
         </div>
         <div class="home-image-category">
-          <img src="assets/img/food1.jpg" alt="image-category">
+          <img [src]="category?.image ? 'assets/img/'+category?.image : 'assets/img/food1.jpg'" alt="image-category">
         </div>
       </div>
       <!-- <div class="home-box-category">

@@ -23,14 +23,20 @@ export class CategoryComponent implements OnInit {
   onOpen(category:any){
     if(this.isCountry){
       let countryName = category.name.toLowerCase();
-      this.cacheService.setSelectedCountry(countryName);
       this.router.navigateByUrl(countryName)
+      this.cacheService.setCurrentURL(`${countryName}`);
+      this.cacheService.setSelectedCountry(category);
     }
     else if(this.isCategory){
-      let country = this.cacheService.getSelectedCountry()
+      let {name:country} = this.cacheService.getSelectedCountry()
+      country = country.toLowerCase();
       let categoryName = category.name.toLowerCase();
-      this.router.navigateByUrl(`${country}/${categoryName}`)
+      this.router.navigateByUrl(`${country}/${categoryName}`);
+      this.cacheService.setCurrentURL(`${country}/${categoryName}`);
+      this.cacheService.setSelectedCategory(category);
     }
+
+
   }
 
 }
