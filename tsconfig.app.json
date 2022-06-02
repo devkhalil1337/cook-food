@@ -2,7 +2,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../AngularCordova/www",
+    "outDir": "./out-tsc/app",
     "types": []
   },
   "files": [
